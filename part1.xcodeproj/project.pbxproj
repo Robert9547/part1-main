@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A51295BC28649B0B00CE0ADE /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51295BB28649B0B00CE0ADE /* Game.swift */; };
+		A523CF6F2863580B00175CAB /* CreateHouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A523CF6E2863580A00175CAB /* CreateHouse.swift */; };
 		A550D5D52861D42B00F3E427 /* CreatorJoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A550D5D42861D42B00F3E427 /* CreatorJoin.swift */; };
 		A553E08C2844BF2E00C111C6 /* part1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553E08B2844BF2E00C111C6 /* part1App.swift */; };
 		A553E08E2844BF2E00C111C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A553E08D2844BF2E00C111C6 /* ContentView.swift */; };
@@ -16,12 +18,15 @@
 		A553E09F2844C2A500C111C6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A553E09E2844C2A500C111C6 /* FirebaseFirestoreSwift */; };
 		A553E0A12844C2A500C111C6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A553E0A02844C2A500C111C6 /* FirebaseStorage */; };
 		A553E0A42844C47E00C111C6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A553E0A32844C47E00C111C6 /* GoogleService-Info.plist */; };
+		A565C227286707B100F42901 /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565C226286707B100F42901 /* GameOver.swift */; };
 		A5BF1637284A6CEF00749DDC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF1636284A6CEF00749DDC /* Home.swift */; };
 		A5CC74B628477C810084AEAA /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC74B528477C810084AEAA /* Register.swift */; };
 		A5CC74B92847998D0084AEAA /* Setstyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CC74B82847998D0084AEAA /* Setstyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A51295BB28649B0B00CE0ADE /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A523CF6E2863580A00175CAB /* CreateHouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHouse.swift; sourceTree = "<group>"; };
 		A550D5D42861D42B00F3E427 /* CreatorJoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorJoin.swift; sourceTree = "<group>"; };
 		A553E0882844BF2E00C111C6 /* part1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = part1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A553E08B2844BF2E00C111C6 /* part1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = part1App.swift; sourceTree = "<group>"; };
@@ -30,6 +35,7 @@
 		A553E0922844BF3100C111C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A553E0942844BF3100C111C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A553E0A32844C47E00C111C6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A565C226286707B100F42901 /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
 		A5BF1636284A6CEF00749DDC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		A5CC74B528477C810084AEAA /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		A5CC74B82847998D0084AEAA /* Setstyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setstyle.swift; sourceTree = "<group>"; };
@@ -72,7 +78,10 @@
 				A5CC74B82847998D0084AEAA /* Setstyle.swift */,
 				A5CC74B528477C810084AEAA /* Register.swift */,
 				A5BF1636284A6CEF00749DDC /* Home.swift */,
+				A523CF6E2863580A00175CAB /* CreateHouse.swift */,
 				A550D5D42861D42B00F3E427 /* CreatorJoin.swift */,
+				A51295BB28649B0B00CE0ADE /* Game.swift */,
+				A565C226286707B100F42901 /* GameOver.swift */,
 				A553E08D2844BF2E00C111C6 /* ContentView.swift */,
 				A553E08F2844BF3100C111C6 /* Assets.xcassets */,
 				A553E0942844BF3100C111C6 /* Info.plist */,
@@ -169,11 +178,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A550D5D52861D42B00F3E427 /* CreatorJoin.swift in Sources */,
+				A523CF6F2863580B00175CAB /* CreateHouse.swift in Sources */,
 				A5CC74B628477C810084AEAA /* Register.swift in Sources */,
+				A565C227286707B100F42901 /* GameOver.swift in Sources */,
 				A553E08E2844BF2E00C111C6 /* ContentView.swift in Sources */,
 				A5BF1637284A6CEF00749DDC /* Home.swift in Sources */,
 				A5CC74B92847998D0084AEAA /* Setstyle.swift in Sources */,
 				A553E08C2844BF2E00C111C6 /* part1App.swift in Sources */,
+				A51295BC28649B0B00CE0ADE /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

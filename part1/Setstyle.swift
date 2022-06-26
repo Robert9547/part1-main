@@ -18,7 +18,7 @@ struct RoleData: Codable, Identifiable {
     let country: String
     let email: String
     let birthday: String
-    let money: Int
+    var money: Int
     let image: String
     let year: String
 }
@@ -43,8 +43,9 @@ struct Setstyle: View {
         image =  "\(selectedIndex)\(Int(hairIn))\(Int(glassIn))\(Int(colorIn))"
         let data = RoleData(name:"\(nameIn)", sex:"\(sex[selectedIndex])", country:"\(countryIn)", email: "\(emailIn)", birthday:"\(firstKissDay)", money: 5000, image: "\(image)", year: "\(yearIn)" )
         do {
-            let documentReference = try db.collection("RoleDatas").addDocument(from: data)
-                print(documentReference.documentID)
+            try db.collection("RoleDatas").document("\(emailIn)").setData(from: data)
+            //let documentReference = try db.collection("RoleDatas").addDocument(from: data)
+                //print(documentReference.documentID)
         } catch {
             print(error)
         }
